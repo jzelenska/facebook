@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facebook</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+                <img src="./img/logo.png" alt="Facebook Logo" width="150">
+        </div>
+        <div class="login-form">
+                 <form action="login.php" method="post">
+                    <table id="login-table">
+                        <tr>
+                            <td>
+                                <label for="username">Email</label>
+                            </td>
+                            <td>
+                                <label for="password">Password</label>
+                            </td>
+                            <td>    
+                                <label for="login"></label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="login" id="username" type="text" name="username" required>
+                            </td>
+                            <td>
+                                <input class="login" id="password" type="password" name="password" required>
+                            </td>
+                            <td>
+                                <button type="submit" id="login">LogIn</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div id="promo">
+                <h4>
+                    Facebook helps you connect and share with 
+                    <br />
+                    the people in your life.
+                </h4>
+                <img src="./img/map.png" alt="Map" width="100%">
+            </div>
+            <div id="signup">
+                <form action="signup.php" method="post">
+                    <h4>Sign Up</h4>
+                    <p>It's free and always will be.</p>
+                    <hr>
+                    <table id="signup-table">
+                        <tr>
+                            <td><label for="first_name">First Name: </label></td>
+                            <td><input type="text" name="first_name" id="first_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="last_name">Last Name: </label></td>
+                            <td><input type="text" name="Last_name" id="last_name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Your Email: </label></td>
+                            <td><input type="email" name="email" id="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email2">Re-enter Email: </label></td>
+                            <td><input type="email" id="email2" name="email2" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="new_password">New Password: </label></td>
+                            <td><input type="password" id="new_password" name="new_password"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="gender">I am: </label></td>
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option value="option">Select Sex:</option>
+                                    <option value="option1">Male</option>
+                                    <option value="option2">Female</option>
+                                    <option value="option3">Prefer not to say</option>
+                                </select>
+                            </td>
+                        <tr>
+                            <td><label for="month">Birthday: </label></td>
+                            <td>
+                                <div id="birthday">   
+                                <select name="month" id="month">
+                                    <option value="option">Month:</option>
+                                    <option value="option1m">1</option>
+                                    <option value="option2m">2</option>
+                                    <option value="option3m">3</option>
+                                    <option value="option4m">4</option>
+                                    <option value="option5m">5</option>
+                                    <option value="option6m">6</option>
+                                    <option value="option7m">7</option>
+                                    <option value="option8m">8</option>
+                                    <option value="option9m">9</option>
+                                    <option value="option10m">10</option>
+                                    <option value="option11m">11</option>
+                                    <option value="option12m">12</option>
+                                </select>
+                                <select name="day" id="day">
+                                    <option value="option">Day:</option>
+                                    <option value="option1d">1</option>
+                                    <option value="option2d">2</option>
+                                    <option value="option3d">3</option>
+                                    <option value="option4d">4</option>
+                                    <option value="option5d">5</option>
+                                    <option value="option6d">6</option>
+                                    <option value="option7d">7</option>
+                                    <option value="option8d">8</option>
+                                    <option value="option9d">9</option>
+                                    <option value="option10d">10</option>
+                                    <option value="option11d">11</option>
+                                    <option value="option12d">12</option>
+                                </select>
+                                <select name="year" id="year">
+                                    <option value="option">Year:</option>
+                                    <option value="option1y">1999</option>
+                                    <option value="option2y">2000</option>
+                                    <option value="option3y">2001</option>
+                                    <option value="option4y">2002</option>
+                                    <option value="option5y">2004</option>
+                                </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label></label></td>
+                            <td><p><a href="#">Why do I need to provide my birthday?</a></p></td>
+                        </tr>
+                        <tr>
+                            <td><label></label></td>
+                            <td><p>By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read and understand our <a href="#">Data Use Policy</a>.</p></td>
+                        </tr>
+                    </table>
+                    <button name="Submit" type="submit">Sign Up</button>
+                     <hr>
+                </form>
+                <h4 id="page"> <a href="#">Create a Page</a> for a celebrity, band or business.</h4>
+            </div>
+        </div>
+    </main>
+<footer>
+    <div id="languages">
+        <img src="./img/languages.png" alt="Languages">
+    </div>
+    <hr>
+        <div id="copyright">
+            <p>Facebook &copy; 2012 <a href="#">English (US)</a></p>
+            <div id="advertising">
+                <ul class="footer_links">
+                    <li><a href="#">Mobile</a></li>
+                    <li><a href="#">Find Friends</a></li>
+                    <li><a href="#">Badges</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">About</a></li> 
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Create a Page</a></li>
+                    <li><a href="#">Developers</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+</body>
+</html>
